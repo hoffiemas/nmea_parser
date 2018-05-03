@@ -1,6 +1,6 @@
 import {
   parseTime, parseLatitude, parseLongitude, parseValidationState, parseModeIndication
-} from "./parse-helper-functions";
+} from './parse-helper-functions';
 
 export function parseGLL(nmeaArray: string[]): { [k: string]: any } | null {
 

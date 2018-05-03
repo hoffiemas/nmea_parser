@@ -18,7 +18,7 @@ export function parseTime(value: string): string | null {
     let HH = value.substr(0, 2);
     let MM = value.substr(2, 2);
     let SS = value.substr(4);
-    value = HH + ":" + MM + ":" + SS;
+    value = HH + ':' + MM + ':' + SS;
     result = value;
   }
   return result;
@@ -36,7 +36,7 @@ export function parseLatitude(value: string, hemisphere: string):
   //value comes usually in the following format DDMM.mmmmm
   if (value && hemisphere) {
     let degStr = value.substr(0, 2);
-    let minStr = value.replace(degStr, "");
+    let minStr = value.replace(degStr, '');
 
     if (!isNaN(parseInt(degStr, 10))) {
       let parsedMin = isNaN(parseFloat(minStr)) ? 0 : parseFloat(minStr) / 60;
@@ -46,10 +46,10 @@ export function parseLatitude(value: string, hemisphere: string):
       // north hemisphere. In this case the latitude ist undetermined
       // and worthless ==> null is returned,therefore only the N and S cases are
       //here
-      (hemisphere.toUpperCase() == "N") &&
+      (hemisphere.toUpperCase() == 'N') &&
         (deg = parseInt(degStr, 10) + parsedMin);
 
-      (hemisphere.toUpperCase() == "S") &&
+      (hemisphere.toUpperCase() == 'S') &&
         (deg = -(parseInt(degStr, 10) + parsedMin));
     }
   }

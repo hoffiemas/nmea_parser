@@ -1,6 +1,6 @@
 import {
    parseCommon, parseSmode, parseFixStatus
-} from "./parse-helper-functions";
+} from './parse-helper-functions';
 
 export function parseGSA(nmeaArray: string[]): { [k: string]: any } | null {
 

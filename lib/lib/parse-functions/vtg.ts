@@ -1,6 +1,6 @@
 import {
    parseCommon, parseModeIndication
-} from "./parse-helper-functions";
+} from './parse-helper-functions';
 
 export function parseVTG(nmeaArray: string[]): { [k: string]: any } | null {
 

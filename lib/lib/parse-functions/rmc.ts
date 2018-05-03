@@ -1,6 +1,6 @@
 import {
   parseTime, parseLatitude, parseLongitude, parseCommon,  parseValidationState, parseVariation, parseModeIndication
-} from "./parse-helper-functions";
+} from './parse-helper-functions';
 
 export function parseRMC(nmeaArray: string[]): { [k: string]: any } | null {
 

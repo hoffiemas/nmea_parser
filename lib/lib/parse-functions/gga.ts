@@ -1,6 +1,6 @@
 import {
   parseTime, parseLatitude, parseLongitude, parseCommon, parseFixQuali
-} from "./parse-helper-functions";
+} from './parse-helper-functions';
 
 export function parseGGA(nmeaArray: string[]): { [k: string]: any } | null {
 
