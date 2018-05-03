@@ -1,4 +1,4 @@
-import { ISimpleObject } from "./interfaces";
+import { ISimpleObject } from './interfaces';
 
 export function isNoOrEmptyObj(obj?: ISimpleObject) {
 
